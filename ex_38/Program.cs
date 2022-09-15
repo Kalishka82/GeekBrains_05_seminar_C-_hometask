@@ -9,7 +9,7 @@ int size = int.Parse(Console.ReadLine()!);
 double[] numbers = CreateRandomArray(size);
 PrintArray(numbers);
 // Console.WriteLine($"Макс элемент массива = {FindMaxNumber(numbers)}, мин = {FindMinNumber(numbers)}");
-double difference = FindMaxNumber(numbers) - FindMinNumber(numbers);
+double difference = Math.Abs(FindMaxNumber(numbers) - FindMinNumber(numbers));
 Console.WriteLine($"Разница между макс и мин элементами массива = {difference}");
 
 double[] CreateRandomArray(int size)
